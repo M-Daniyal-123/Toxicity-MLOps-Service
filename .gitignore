@@ -1,0 +1,6 @@
+data/
+model/
+production/
+mlartificats/
+mlruns/
+__pycache__/
