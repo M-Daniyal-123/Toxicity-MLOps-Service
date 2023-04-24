@@ -31,4 +31,4 @@ jobs:
           AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
         run: |
-          docker run -it -e AWS_SECRET_KEY=${AWS_SECRET_KEY} AWS_ACCESS_KEY=${AWS_ACCESS_KEY} -p 5001:5001 -d myflaskapp
+          docker run -e AWS_SECRET_KEY=${AWS_SECRET_KEY} AWS_ACCESS_KEY=${AWS_ACCESS_KEY} -p 5001:5001 -d myflaskapp
